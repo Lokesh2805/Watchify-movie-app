@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react';
 
 
-export default function () {
+export default function DarkModeSwitch() {
     const {theme, setTheme, systemTheme} = useTheme();
     const[mounted, setMounted] = useState(false);
     const currTheme = theme === 'system' ? systemTheme : theme;

@@ -11,6 +11,7 @@ export default async function MoviePage({params}) {
         <div className='p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-6xl mx-auto md:space-x-16'>
             <Image src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path }`} width={500} height={300} 
             className='rounded-lg'
+            alt='image'
             style={{maxWidth:'100%', height:'100%'}}
             />
             <div className='p-2 '>
